@@ -1,6 +1,6 @@
 export class Toy {
     type: string = "";
-    scream: string = "I actually moved";
+    scream: string = "";
 
     constructor() {
     }
