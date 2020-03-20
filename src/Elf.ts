@@ -1,6 +1,8 @@
 import { Toy } from "./Toy";
 import { Packaging } from "./Packaging";
 import { GiftWrap } from "./GiftWrap";
+import { PolyObject } from "./PolyObject";
+import { Furniture } from "./Furniture";
 
 export class Elf {
     _nickname: string;
@@ -38,5 +40,13 @@ export class Elf {
         } else {
             throw new Error('Sorry this package is already empty');
         }
+    }
+
+    take(Furniture: Furniture, index: number = 0) {
+        Furniture.take(index);
+    }
+
+    put(Furniture: Furniture, PolyObject: PolyObject) {
+        Furniture.put(PolyObject);
     }
 }

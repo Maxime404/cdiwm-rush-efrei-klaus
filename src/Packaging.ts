@@ -1,10 +1,12 @@
 import { Toy } from "./Toy";
+import { PolyObject } from "./PolyObject";
 
-export class Packaging {
+export class Packaging extends PolyObject {
     isOpen: boolean = false;
     toy: Toy | undefined = undefined;
 
     constructor() {
+        super();
     }
 
     open() {

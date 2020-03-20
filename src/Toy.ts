@@ -1,8 +1,11 @@
-export class Toy {
+import { PolyObject } from "./PolyObject";
+
+export class Toy extends PolyObject{
     type: string = "";
     scream: string = "";
 
     constructor() {
+        super();
     }
 
     isMoved() {
